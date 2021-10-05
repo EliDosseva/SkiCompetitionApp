@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"
+            integrity="sha512-upfO9eMJ0eAmBP6rEKrkyYYu1vdn0geKl7Hc1afwbqTgBckANWPxzcPaCE+TKA1iWncAjWrfgUNo9JW/aSVJgg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="js/startUp.js"></script>
+    <title>Ski Competition</title>
+</head>
+
+<body onload="startUp()">
+    <ul data-bind="foreach: Decks">
+        <li data-bind="text: $data.Name, click: $parent.ActiveDeck"></li>
+    </ul>
+    <!--ko with: ActiveDeck -->
+    <div data-bind="template:  contentVM.templateName">
+    </div>
+    <!--/ko-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script type="text/html" id="Competitions-template">
+        Competitions template
+    </script>
+
+    <script type="text/html" id="Competitors-template">
+        Competitors template
+    </script>
+
+    <script type="text/html" id="Teams-template">
+        Teams template
+    </script>
+
+    <script type="text/html" id="Ranks-template">
+        Ranks template
+    </script>
+</body>
+
+</html>

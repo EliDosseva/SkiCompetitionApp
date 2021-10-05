@@ -1,0 +1,75 @@
+
+nav {
+    margin-top: 5%;
+    width: 50%;
+    background-color: #b3ddfa;
+    border-radius: 10px;
+}
+
+.nav-item {
+    border: 1px solid #9ecdf1;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+.nav-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: block;
+    width: 100px;
+    margin-right: 5%;
+}
+
+.search {
+    display: inline-flex;
+    margin-bottom: 3%;
+    width: 120px;
+}
+
+.btn-filters {
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: #9ecdf1;
+    font-size: 13px;
+    color: black;
+    background-color: #9ecdf1;
+}
+
+.btn-search, .btn-add {
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: black;
+}
+.controllers {
+    margin-top: 2%;
+    width: 96%;
+    display: flex;
+    margin-left: 2%;
+    justify-content: space-between;
+}
+input {
+    text-align: center;
+}
+
+.bi-search {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.buttons-teams {
+    display: block;
+    width: 100px;
+    margin-left: 78%;
+    margin-top: 2%;
+}
